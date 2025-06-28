@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+}
+
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.left-panel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.right-panel h1 {
+  color: #a32927;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.right-panel p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+#back-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #a32927;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#back-button:hover {
+  background: #903c3a;
+}
+
+
+@media screen and (max-width: 768px) {
+  .details-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right-panel, .left-panel {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .right-panel h1 {
+    font-size: 26px;
+  }
+
+  .right-panel p {
+    font-size: 16px;
+  }
+}

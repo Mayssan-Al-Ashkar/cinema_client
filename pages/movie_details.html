@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/movie_details.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <main class="details-container">
+    <div class="left-panel">
+      <img id="cast-photo" src="" alt="Cast Photo">
+    </div>
+    <div class="right-panel">
+      <h1 id="movie-title">Loading...</h1>
+      <p><strong>Description:</strong> <span id="movie-description"></span></p>
+      <p><strong>Genre:</strong> <span id="movie-genre"></span></p>
+      <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+      <p><strong>Release Date:</strong> <span id="movie-date"></span></p>
+      <p><strong>Cast:</strong> <span id="movie-cast"></span></p>
+      <button id="back-button">← Return to Home</button>
+    </div>
+  </main>
+
+  <script src="../scripts/movie_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cinema</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script defer src="scripts/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Smart Cinema Booking System</div>
+    <div class="menuic">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#login">Login/Register</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to Smart Cinema Booking Platform</h1>
+      <p>Book your movie night in seconds. Smart cinema, made for you.</p>
+      <a href="#features" class="cta-button">Explore Features</a>
+    </div>
+  </section>
+
+  <section id="login" class="section">
+    <div class="auth-container">
+        <div class="auth-image"></div>
+        <div class="auth-form">
+            <div class="toggle-container">
+                <div class="toggle-btn">
+                    <button onclick="toggleForm('login')" class="toggle active" id="loginBtn">Login</button>
+                    <button onclick="toggleForm('register')" class="toggle" id="registerBtn">Register</button>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <form id="loginForm" class="form-box active">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <input type="text" name="email" placeholder="Email or Mobile Number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <p class="forgot-password">Forgot Password?</p>
+                </form>
+                <form id="registerForm" class="form-box">
+                    <h2>Register</h2>
+                    <div class="input-group">
+                        <input type="text" name="username" placeholder="username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="phone_nbr" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Platform Features</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fa-solid fa-user-gear"></i>
+            <h3>Personalized Profile</h3>
+            <p>Customize your experience with personal details, favorite genres, payment methods, and communication preferences</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-users-rectangle"></i>
+            <h3>Group Booking</h3>
+            <p>Invite friends, allocate seats together, and track RSVP/payment status in real time</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-percent"></i>
+            <h3>Smart Pricing</h3>
+            <p>Dynamic pricing for peak/off-peak hours, coupons, membership discounts, and last-minute deals</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-couch"></i>
+            <h3>Interactive Seating</h3>
+            <p>Color-coded seat layouts with real-time synchronization across all devices</p>
+        </div>
+    </div>
+</section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Have questions? We're here to help!</p>
+        <div class="contact-details">
+          <p><i class="fa-solid fa-envelope"></i> smartcinema@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +961 76 123456</p>
+          <p><i class="fa-solid fa-location-dot"></i> BDD , Beirut</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="social">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Smart Cinema</h3>
+        <p>Transforming cinema management with intelligent solutions</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:info@smartcinema.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/123456789" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

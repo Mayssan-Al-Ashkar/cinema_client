@@ -1,0 +1,50 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+}
+
+h1 {
+    text-align: center;
+    color: #f9c74f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #f9c74f;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f9844a;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        margin: 20px;
+        padding: 15px;
+    }
+}

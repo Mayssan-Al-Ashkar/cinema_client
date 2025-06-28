@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <main class="profile-container">
+        <h1>User Profile</h1>
+        <form id="profile-form">
+            <input type="text" id="full_name" placeholder="Full Name" required />
+            <input type="number" id="age" placeholder="Age" required />
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input type="text" id="location" placeholder="Location" required />
+            <input type="text" id="favorite_genre" placeholder="Favorite Genre" />
+            <select id="payment_method">
+                <option value="">Select Payment Method</option>
+                <option>Cash</option>
+                <option>Card</option>
+                <option>Other</option>
+            </select>
+            <input type="text" id="communication_pref" placeholder="Communication Preference" />
+            <button type="submit">Save</button>
+        </form>
+        <br>
+        <button onclick="window.location.href='home.html'"> Back to Home</button>
+    </main>
+    <script src="../scripts/profile.js"></script>
+</body>
+</html>

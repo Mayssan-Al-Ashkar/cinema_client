@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Dashboard</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/cinema_logo.png" alt="Cinema Logo" class="logo">
+            <h2>Cinema</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active">
+                <a href="home.html"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+                <a href="profile.html"><i class="fas fa-user"></i>Profile</a>
+            </li>
+            <li>
+                <a href="book.html"><i class="fas fa-ticket"></i>Book Tickets</a>
+            </li>
+            <li>
+                <a href="invite.html"><i class="fas fa-user-plus"></i>Invite Friends</a>
+            </li>
+            <li>
+                <a href="snacks.html"><i class="fa-solid fa-cookie"></i>Pre-order Snacks</a>
+            </li>
+            <li class="admin-only">
+                <a href="admin.html"><i class="fas fa-lock"></i>Admin Panel</a>
+            </li>
+            <li class="logout">
+                <a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="welcome-section">
+            <h1>Welcome <span id="username">User</span>!</h1>
+            <p class="date" id="current-date"></p>
+        </div>
+
+        <section class="movie-section">
+            <h2>Now Showing</h2>
+            <div class="movie-grid" id="now-showing">
+            </div>
+        </section>
+    </main>
+
+    <template id="movie-card-template">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="" alt="Movie Poster">
+                <div class="movie-rating">
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title"></h3>
+                <p class="movie-cast"></p>
+                <div class="movie-actions">
+                    <button class="trailer-btn"><i class="fas fa-play"></i> See Details</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script src="../scripts/home.js"></script>
+</body>
+<button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+</button>
+</html>
