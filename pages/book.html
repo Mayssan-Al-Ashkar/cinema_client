@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Seats</title>
+  <link rel="stylesheet" href="../styles/book.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h1>Pick Your Seats</h1>
+  <div class="legend">
+  <span><span class="seat normal"></span> Normal (500 LBP)</span>
+  <span><span class="seat premium"></span> Premium (800 LBP)</span>
+  <span><span class="seat selected"></span> Selected</span>
+  <span><span class="seat reserved"></span> Reserved</span>
+</div>
+
+
+  <div id="screen">SCREEN</div>
+  <div id="seat-layout"></div>
+  <div id="total-price">Total: 0 LBP</div>
+  <button id="submit-booking">Confirm Booking</button>
+
+  <script src="../scripts/book.js"></script>
+</body>
+</html>

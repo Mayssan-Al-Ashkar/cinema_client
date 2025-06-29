@@ -28,6 +28,10 @@ function createMovieCard(movie) {
    card.querySelector('.trailer-btn').addEventListener('click', () => {
     window.location.href = `../pages/movie_details.html?id=${movie.id}`;
 });
+
+card.querySelector('.book-btn').addEventListener('click', () => {
+    window.location.href = `../pages/book.html?id=${movie.id}`;
+});
     return card;
 }
 
@@ -107,6 +111,10 @@ function setupMobileMenu() {
         });
     }
 }
+function bookNow(movieId) {
+    localStorage.setItem('selected_movie_id', movieId);
+    window.location.href = 'booking.html';
+}
 
 async function initializePage() {
     updateWelcomeMessage();
@@ -118,8 +126,6 @@ async function initializePage() {
     const movies = await fetchMovies();
 
     populateMovieSection('now-showing', movies.nowShowing);
-    populateMovieSection('coming-soon', movies.comingSoon);
-    populateMovieSection('suggested-movies', movies.suggested);
 }
 
 document.addEventListener('DOMContentLoaded', initializePage);
