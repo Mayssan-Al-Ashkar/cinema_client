@@ -75,7 +75,7 @@ confirmBtn.addEventListener('click', async () => {
       seats: selectedSeats
     });
     if (res.data.success) {
-      alert('Error');
+      alert('succes');
       loadReservedSeats();
     } else {
       alert('Error');
